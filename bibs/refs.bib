@@ -3,6 +3,7 @@ file = {:home/mojtaba/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloade
 title = {تشخیص برنامه های بسته بندی شده ی مجدد}
 }
 
+
 @article{Khanmohammadi2019,
 abstract = {The growing popularity of Android applications has generated increased concerns over the danger of piracy and the spread of malware, and particularly of adware: malware that seeks to present unwanted advertisements to the user. A popular way to distribute malware in the mobile world is through repackaging of legitimate apps. This process consists of downloading, unpacking, manipulating, recompiling an application, and publishing it again in an app store. In this paper, we conduct an empirical study of over 15,000 apps to gain insights into the factors that drive the spread of repackaged apps. We also examine the motivations of developers who publish repackaged apps and those of users who download them, as well as the factors that determine which apps are chosen for repackaging, and the ways in which the apps are modified during the repackaging process. Having observed that adware is particularly prevalent in repackaged apps, we focus on this type of malware and examine how the app is modified when it is injected in an app's code. Our findings shed much needed light on this class of malware that can be useful to security experts, and allow us to make recommendations that could lead to the creation of more effective malware detection tools, Furthermore, on the basis of our results, we propose a novel app indexing scheme that minimizes the number of comparisons needed to detect repackaged apps.},
 author = {Khanmohammadi, Kobra and Ebrahimi, Neda and Hamou-Lhadj, Abdelwahab and Khoury, Rapha{\"{e}}l},
@@ -17,6 +18,8 @@ title = {{Empirical study of android repackaged applications}},
 volume = {24},
 year = {2019}
 }
+
+
 
 @article{Vidas2013,
 abstract = {Application marketplaces are the main software distribution mechanism for modern mobile devices but are also emerging as a viable alternative to brick-and-mortar stores for personal computers. While most application marketplaces require applications to be cryptographically signed by their developers, in Android marketplaces, self-signed certificates are common, thereby offering very limited authentication properties. As a result, there have been reports of malware being distributed through application "repackaging." We provide a quantitative assessment of this phenomenon by collecting 41,057 applications from 194 alternative Android application markets in October 2011, in addition to a sample of 35,423 applications from the official Android market, Google Play. We observe that certain alternative markets almost exclusively distribute repackaged applications containing malware. To remedy this situation we propose a simple verification protocol, and discuss a proofof- concept implementation, AppIntegrity. AppIntegrity strengthens the authentication properties offered in application marketplaces, thereby making it more difficult for miscreants to repackage apps, while presenting very little computational or communication overhead, and being deployable without requiring significant changes to the Android platform. Copyright 2013 ACM.},
@@ -120,6 +123,9 @@ title = {{Android HIV: A Study of Repackaging Malware for Evading Machine-Learni
 volume = {15},
 year = {2020}
 }
+
+
+
 @article{Crussell2012,
 abstract = {We present DNADroid, a tool that detects Android application copying, or "cloning", by robustly computing the similarity between two applications. DNADroid achieves this by comparing program dependency graphs between methods in candidate applications. Using DNADroid, we found at least 141 applications that have been the victims of cloning, some as many as seven times. DNADroid has a very low false positive rate - we manually confirmed that all the applications detected are indeed clones by either visual or behavioral similarity. We present several case studies that give insight into why applications are cloned, including localization and redirecting ad revenue. We describe a case of malware being added to an application and show how DNADroid was able to detect two variants of the same malware. Lastly, we offer examples of an open source cracking tool being used in the wild. {\textcopyright} 2012 Springer-Verlag.},
 author = {Crussell, Jonathan and Gibler, Clint and Chen, Hao},
@@ -133,6 +139,11 @@ title = {{Attack of the clones: Detecting cloned applications on Android markets
 volume = {7459 LNCS},
 year = {2012}
 }
+
+
+
+
+
 @book{Dong2018,
 abstract = {Program code is a valuable asset to its owner. Due to the easy-to-reverse nature of Java, code protection for Android apps is of particular importance. To this end, code obfuscation is widely utilized by both legitimate app developers and malware authors, which complicates the representation of source code or machine code in order to hinder the manual investigation and code analysis. Despite many previous studies focusing on the obfuscation techniques, however, our knowledge of how obfuscation is applied by real-world developers is still limited. In this paper, we seek to better understand Android obfuscation and depict a holistic view of the usage of obfuscation through a large-scale investigation in the wild. In particular, we focus on three popular obfuscation approaches: identifier renaming, string encryption and Java reflection. To obtain the meaningful statistical results, we designed efficient and lightweight detection models for each obfuscation technique and applied them to our massive APK datasets (collected from Google Play, multiple third-party markets, and malware databases). We have learned several interesting facts from the result. For example, more apps on third-party markets than malware use identifier renaming, and malware authors use string encryption more frequently. We are also interested in the explanation of each finding. Therefore we carry out in-depth code analysis on some Android apps after sampling. We believe our study will help developers select the most suitable obfuscation approach, and in the meantime help researchers improve code analysis systems in the right direction.},
 archivePrefix = {arXiv},
@@ -391,7 +402,7 @@ year = {2012}
 @INPROCEEDINGS{libradar,
   author={Ma, Ziang and Wang, Haoyu and Guo, Yao and Chen, Xiangqun},
   booktitle={2016 IEEE/ACM 38th International Conference on Software Engineering Companion (ICSE-C)},
-  title={LibRadar: Fast and Accurate Detection of Third-Party Libraries in Android Apps}, 
+  title={LibRadar: Fast and Accurate Detection of Third-Party Libraries in Android Apps},
   year={2016},
   volume={},
   number={},
@@ -420,4 +431,155 @@ url = {https://www.sciencedirect.com/science/article/pii/S0167739X21004751},
 author = {Pascal Maniriho and Abdun Naser Mahmood and Mohammad Jabed Morshed Chowdhury},
 keywords = {Malware analysis, Malware behaviour analysis, Malware detection, Dynamic analysis, Memory analysis, Machine learning, Deep learning},
 abstract = {There has been an increasing trend of malware release, which raises the alarm for security professionals worldwide. It is often challenging to stay on top of different types of malware and their detection techniques, which are essential, particularly for researchers and the security community. Analysing malware to get insights into what it intends to perform on the victim’s system is one of the crucial steps towards malware detection. Malware analysis can be performed through static analysis, code analysis, dynamic analysis, memory analysis and hybrid analysis techniques. The next step to malware analysis is the detection model’s design using malware’s extracted patterns from the analysis. Machine learning and deep learning methods have drawn attention to researchers, owing to their ability to implement sophisticated malware detection models that can deal with known and unknown malicious activities. Therefore, this survey presents a comprehensive study and analysis of current malware and detection techniques using the snowball approach. It presents a comprehensive study on malware analysis testbeds, dynamic malware analysis and memory analysis, the taxonomy of malware behaviour analysis tools, datasets repositories, feature selection, machine learning and deep learning techniques. Moreover, comparisons of behaviour-based malware detection techniques have been grouped by categories of machine learning and deep learning techniques. This study also looks at various performance evaluation metrics, current research challenges in this area and possible future direction of research.}
+}
+
+@misc{oracleTrailReflection,
+	author = {},
+	title = {Trail: The Reflection API The Javax; Tutorials --- docs.oracle.com},
+	howpublished = {\url{https://docs.oracle.com/javase/tutorial/reflect/index.html}},
+	year = {},
+	note = {[Accessed 02-Feb-2023]},
+}
+
+
+
+@article{Rastogi2013,
+abstract = {Mobile malware threats have recently become a real concern. In this paper, we evaluate the state-of-the-art commercial mobile antimalware products for Android and test how resistant they are against various common obfuscation techniques (even with known malware). Such an evaluation is important for not only measuring the available defense against mobile malware threats but also proposing effective, next-generation solutions. We developed DroidChameleon, a systematic framework with various transformation techniques, and used it for our study. Our results on ten popular commercial anti-malware applications for Android are worrisome: none of these tools is resistant against common malware transformation techniques. Moreover, the transformations are simple in most cases and anti-malware tools make little effort to provide transformation- resilient detection. Finally, in the light of our results, we propose possible remedies for improving the current state of malware detection on mobile devices. {\textcopyright} 2013 ACM.},
+author = {Rastogi, Vaibhav and Chen, Yan and Jiang, Xuxian},
+doi = {10.1145/2484313.2484355},
+file = {:home/mojtaba/work/papers/rcj13b.pdf:pdf},
+isbn = {9781450317672},
+journal = {ASIA CCS 2013 - Proceedings of the 8th ACM SIGSAC Symposium on Information, Computer and Communications Security},
+keywords = {android,anti-malware,malware,mobile},
+pages = {329--334},
+title = {{DroidChameleon: Evaluating Android anti-malware against transformation attacks}},
+year = {2013}
+}
+
+
+@article{ZHANG2021301285,
+title = {Android application forensics: A survey of obfuscation, obfuscation detection and deobfuscation techniques and their impact on investigations},
+journal = {Forensic Science International: Digital Investigation},
+volume = {39},
+pages = {301285},
+year = {2021},
+issn = {2666-2817},
+doi = {https://doi.org/10.1016/j.fsidi.2021.301285},
+url = {https://www.sciencedirect.com/science/article/pii/S2666281721002031},
+author = {Xiaolu Zhang and Frank Breitinger and Engelbert Luechinger and Stephen O'Shaughnessy},
+keywords = {Android application forensic, Obfuscation, Deobfuscation, Obfuscation detection, Literature review, Survey, Reverse engineering},
+abstract = {Android obfuscation techniques include not only classic code obfuscation techniques that were adapted to Android, but also obfuscation methods that target the Android platform specifically. This work examines the status-quo of Android obfuscation, obfuscation detection and deobfuscation. Specifically, it first summarizes obfuscation approaches that are commonly used by app developers for code optimization, to protect their software against code theft and code tampering but are also frequently misused by malware developers to circumvent anti-malware products. Secondly, the article focuses on obfuscation detection techniques and presents various available tools and current research. Thirdly, deobfuscation (which aims at reinstating the original state before obfuscation) is discussed followed by a brief discussion how this impacts forensic investigation. We conclude that although obfuscation is widely used in Android app development (benign and malicious), available tools and the practices on how to deal with obfuscation are not standardized, and so are inherently lacking from a forensic standpoint.}
+}
+
+@misc{codedemonsAllatoriJava,
+	author = {},
+	title = {{A}llatori {J}ava {O}bfuscator --- codedemons.net},
+	howpublished = {\url{http://www.codedemons.net/allatori.html}},
+	year = {},
+	note = {[Accessed 02-Feb-2023]},
+}
+
+
+@misc{guardsquareProGuardManual,
+	author = {},
+	title = {{P}ro{G}uard {M}anual: {H}ome | {G}uardsquare --- guardsquare.com},
+	howpublished = {\url{https://www.guardsquare.com/manual/home}},
+	year = {},
+	note = {[Accessed 02-Feb-2023]},
+}
+
+@article{Ardito2020,
+abstract = {Several techniques exist for mobile test automation, from script-based techniques to automated test generation based on GUI models. Most techniques fall short in being adopted extensively by practitioners because of the very costly definition (and maintenance) of test cases. We present a novel testing framework for Android apps that allows a developer to write effective test scripts without having to know the implementation details and the user interface of the app under test. The main goal of the framework is to generate adaptive tests that can be executed on a significant number of apps, or different releases of the same app, without manual editing of the tests. The frameworks consists of: (1) a Test Scripting Language, that allows the tester to write generic test scripts tailored to activity and app categories; (2) a State Graph Modeler, that creates a model of the app's GUI, identifying activities (i.e., screens) and widgets; (3) an app classifier that determines the type of application under test; (4) an activity classifier that determines the purpose of each screen; (5) a test adapter that executes test scripts that are compatible with the specific app and activity, automatically tailoring the test scripts to the classes of the app and the activities under test. We evaluated empirically the components of our testing framework. The classifiers were able to outperform available approaches in the literature. The developed testing frameworkwas able to correctly adapt high-level test cases to 28 out of 32 applications, and to reduce the LOCs of the test scripts of around 90%.We conclude that machine learning can be fruitfully applied to the creation of high-level, adaptive test cases for Android apps. Our framework is modular in nature and allows expansions through the addition of new commands to be executed on the classified apps and activities.},
+author = {Ardito, Luca and Coppola, Riccardo and Leonardi, Simone and Morisio, Maurizio and Buy, Ugo},
+doi = {10.1109/ACCESS.2020.3029735},
+file = {:home/mojtaba/work/papers/Automated_Test_Selection_for_Android_Apps_Based_on_APK_and_Activity_Classification.pdf:pdf},
+issn = {21693536},
+journal = {IEEE Access},
+pages = {187648--187670},
+title = {{Automated Test Selection for Android Apps Based on APK and Activity Classification}},
+volume = {8},
+year = {2020}
+}
+
+
+
+@article{Bhatt2015,
+abstract = {Smartphone have been widely used in recent years due to their functionality, thus they also become attack targets of malware. Android provides a permission category that requires each application to explicitly request permission before it can be installed to run. Permissions are silent work when it is given request by the user, means over privileged permissions action going towards malicious purpose. Reverse engineering process application is repacked with the malicious permissions. Android provides inter process communication to other application are able to leak user's location, data and identity. To protect from malicious application it is needed to have some control mechanism to analyze application from malicious activity. This paper focuses of various permission based malware analysis method to detect malwares in android application.},
+author = {Bhatt, Mitul S. and Patel, Hinaxi and Kariya, Swati},
+file = {:home/mojtaba/Downloads/ijcta2015060536.pdf:pdf},
+journal = {Int.J.Computer Technology and Applications},
+keywords = {- android security,and mobile malware detection,android malware detection,permission based analysis},
+number = {5},
+pages = {852--856},
+title = {{A Survey Permission Based Mobile Malware Detection}},
+volume = {6},
+year = {2015}
+}
+
+
+@article{classifier,
+author={Karankar, Nilima and Shukla, Pragya and Agrawal, Niyati},
+booktitle={2017 7th International Conference on Communication Systems and Network Technologies (CSNT)},
+title={Comparative study of various machine learning classifiers on medical data},
+year={2017},
+volume={},
+number={},
+pages={267-271},
+doi={10.1109/CSNT.2017.8418550}
+}
+
+
+@article{7476661,
+author={Li, Li and Bissyandé, Tegawendé F. and Klein, Jacques and Le Traon, Yves},
+booktitle={2016 IEEE 23rd International Conference on Software Analysis, Evolution, and Reengineering (SANER)},
+title={An Investigation into the Use of Common Libraries in Android Apps},
+year={2016},
+volume={1},
+number={},
+pages={403-414},
+doi={10.1109/SANER.2016.52}
+}
+
+@article{2627395,
+author = {Zhang, Fangfang and Huang, Heqing and Zhu, Sencun and Wu, Dinghao and Liu, Peng},
+title = {ViewDroid: Towards Obfuscation-Resilient Mobile Application Repackaging Detection},
+year = {2014},
+isbn = {9781450329729},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2627393.2627395},
+doi = {10.1145/2627393.2627395},
+abstract = {In recent years, as mobile smart device sales grow quickly, the development of mobile applications (apps) keeps accelerating, so does mobile app repackaging. Attackers can easily repackage an app under their own names or embed advertisements to earn pecuniary profits. They can also modify a popular app by inserting malicious payloads into the original app and leverage its popularity to accelerate malware propagation. In this paper, we propose ViewDroid, a user interface based approach to mobile app repackaging detection. Android apps are user interaction intensive and event dominated, and the interactions between users and apps are performed through user interface, or views. This observation inspires the design of our new birthmark for Android apps, namely, feature view graph, which captures users' navigation behavior across app views. Our experimental results demonstrate that this birthmark can characterize Android apps from a higher level abstraction, making it resilient to code obfuscation. ViewDroid can detect repackaged apps at a large scale, both effectively and efficiently. Our experiments also show that the false positive and false negative rates of ViewDroid are both very low.},
+booktitle = {Proceedings of the 2014 ACM Conference on Security and Privacy in Wireless &amp; Mobile Networks},
+pages = {25–36},
+numpages = {12},
+keywords = {mobile application, repackaging, obfuscation resilient, user interface},
+location = {Oxford, United Kingdom},
+series = {WiSec '14}
+}
+
+
+@article{Nguyen2020,
+abstract = {The last decade has shown a steady rate of Android device dominance in market share and the emergence of hundreds of thousands of apps available to the public. Because of the ease of reverse engineering Android applications, repackaged malicious apps that clone existing code have become a severe problem in the marketplace. This research proposes a novel repackaged detection system based on perceptual hashes of vetted Android apps and their associated dynamic user interface (UI) behavior. Results show that an average hash approach produces 88% accuracy (indicating low false negative and false positive rates) in a sample set of 4878 Android apps, including 2151 repackaged apps. The approach is the first dynamic method proposed in the research community using image-based hashing techniques with reasonable performance to other known dynamic approaches and the possibility for practical implementation at scale for new applications entering the Android market.},
+author = {Nguyen, Thanh and McDonald, J. Todd and Glisson, William Bradley and Andel, Todd R.},
+doi = {10.24251/hicss.2020.813},
+file = {:home/mojtaba/work/Sharif/ThesisReport/Ms.c-Thesis-Report/figs/Detecting Repackaged Android Applications_OCR.pdf:pdf},
+isbn = {9780998133133},
+issn = {15301605},
+journal = {Proceedings of the Annual Hawaii International Conference on System Sciences},
+pages = {6641--6650},
+title = {{Detecting repackaged android applications using perceptual hashing}},
+volume = {2020-January},
+year = {2020}
+}
+
+
+@article{Salem2015,
+archivePrefix = {arXiv},
+arxivId = {arXiv:1808.01186v1},
+author = {Salem, Aleieldin},
+eprint = {arXiv:1808.01186v1},
+file = {:home/mojtaba/work/Sharif/ThesisReport/Ms.c-Thesis-Report/figs/1808.01186.pdf:pdf},
+title = {{Stimulation and Detection of Android Repackaged Malware with Active Learning}},
+year = {2015}
 }
