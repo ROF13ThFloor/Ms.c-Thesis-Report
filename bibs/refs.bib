@@ -994,3 +994,61 @@ doi = {10.1126/science.1242072},
 URL = {https://www.science.org/doi/abs/10.1126/science.1242072},
 eprint = {https://www.science.org/doi/pdf/10.1126/science.1242072},
 abstract = {Cluster analysis is used in many disciplines to group objects according to a defined measure of distance. Numerous algorithms exist, some based on the analysis of the local density of data points, and others on predefined probability distributions. Rodriguez and Laio devised a method in which the cluster centers are recognized as local density maxima that are far away from any points of higher density. The algorithm depends only on the relative densities rather than their absolute values. The authors tested the method on a series of data sets, and its performance compared favorably to that of established techniques. Science, this issue p. 1492 Local density of points is ranked and analyzed to categorize data. Cluster analysis is aimed at classifying elements into categories on the basis of their similarity. Its applications range from astronomy to bioinformatics, bibliometrics, and pattern recognition. We propose an approach based on the idea that cluster centers are characterized by a higher density than their neighbors and by a relatively large distance from points with higher densities. This idea forms the basis of a clustering procedure in which the number of clusters arises intuitively, outliers are automatically spotted and excluded from the analysis, and clusters are recognized regardless of their shape and of the dimensionality of the space in which they are embedded. We demonstrate the power of the algorithm on several test cases.}}
+
+
+
+@inproceedings{1145,
+author = {Malik, Jyoti and Kaushal, Rishabh},
+title = {CREDROID: Android Malware Detection by Network Traffic Analysis},
+year = {2016},
+isbn = {9781450343466},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2940343.2940348},
+doi = {10.1145/2940343.2940348},
+abstract = {Android, one of the most popular open source mobile operating system, is facing a lot of security issues. Being used by users with varying degrees of awareness complicates the problem further. Most of the security problems are due to maliciousness of android applications. The malwares get installed in mobile phones through various popular applications particularly gaming applications or some utility applications from various third party app-stores which are untrustworthy. A common feature of the malware is to access the sensitive information from the mobile device and transfer it to remote servers. For our work, we have confined ourselves to defining maliciousness as leakage of privacy information by Android application. In this paper we have proposed a method named as CREDROID which identifies malicious applications on the basis of their Domain Name Server(DNS) queries as well as the data it transmits to remote server by performing the in-depth analysis of network traffic logs in offline mode. Instead of performing signature based detection which is unable to detect polymorphic malwares, we propose a pattern based detection. Pattern in our work refers to the leakage of sensitive information being sent to the remote server. CREDROID is a semi-automated approach which works on various factors like the remote server where the application is connecting, data being sent and the protocol being used for communication for identifying the trustworthiness (credibility) of the application. In our work, we have observed that 63\% of the applications from a standard dataset of malwares are generating network traffic which has been the focus of our work.},
+booktitle = {Proceedings of the 1st ACM Workshop on Privacy-Aware Mobile Computing},
+pages = {28–36},
+numpages = {9},
+keywords = {malware detection, network traffic analysis, Android},
+location = {Paderborn, Germany},
+series = {PAMCO '16}
+}
+
+
+
+@inproceedings{Iland2011DetectingAM,
+title={Detecting Android Malware on Network Level},
+author={Daniel Iland and Alexander Pucher},
+year={2011}
+}
+
+
+
+
+@article{8226303,
+author={Kandukuru, Satish and Sharma, R. M.},
+booktitle={2017 2nd International Conference for Convergence in Technology (I2CT)},
+title={Android malicious application detection using permission vector and network traffic analysis},
+year={2017},
+volume={},
+number={},
+pages={1126-1132},
+doi={10.1109/I2CT.2017.8226303}}
+
+
+
+
+@article{LIN2013340,
+title = {Identifying android malicious repackaged applications by thread-grained system call sequences},
+journal = {Computers & Security},
+volume = {39},
+pages = {340-350},
+year = {2013},
+issn = {0167-4048},
+doi = {https://doi.org/10.1016/j.cose.2013.08.010},
+url = {https://www.sciencedirect.com/science/article/pii/S0167404813001272},
+author = {Ying-Dar Lin and Yuan-Cheng Lai and Chien-Hung Chen and Hao-Chuan Tsai},
+keywords = {Malicious repackaged applications, Dynamic analysis, System call, Android, Longest common substring},
+abstract = {Android security has become highly desirable since adversaries can easily repackage malicious codes into various benign applications and spread these malicious repackaged applications (MRAs). Most MRA detection mechanisms on Android focus on detecting a specific family of MRAs or requiring the original benign application to compare with the malicious ones. This work proposes a new mechanism, SCSdroid (System Call Sequence Droid), which adopts the thread-grained system call sequences activated by applications. The concept is that even if MRAs can be camouflaged as benign applications, their malicious behavior would still appear in the system call sequences. SCSdroid extracts the truly malicious common subsequences from the system call sequences of MRAs belonging to the same family. Therefore, these extracted common subsequences can be used to identify any evaluated application without requiring the original benign application. Experimental results show that SCSdroid falsely detected only two applications among 100 evaluated benign applications, and falsely detected only one application among 49 evaluated malicious applications. As a result, SCSdroid achieved up to 95.97% detection accuracy, i.e., 143 correct detections among 149 applications.}
+}
