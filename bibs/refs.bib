@@ -1052,3 +1052,252 @@ author = {Ying-Dar Lin and Yuan-Cheng Lai and Chien-Hung Chen and Hao-Chuan Tsai
 keywords = {Malicious repackaged applications, Dynamic analysis, System call, Android, Longest common substring},
 abstract = {Android security has become highly desirable since adversaries can easily repackage malicious codes into various benign applications and spread these malicious repackaged applications (MRAs). Most MRA detection mechanisms on Android focus on detecting a specific family of MRAs or requiring the original benign application to compare with the malicious ones. This work proposes a new mechanism, SCSdroid (System Call Sequence Droid), which adopts the thread-grained system call sequences activated by applications. The concept is that even if MRAs can be camouflaged as benign applications, their malicious behavior would still appear in the system call sequences. SCSdroid extracts the truly malicious common subsequences from the system call sequences of MRAs belonging to the same family. Therefore, these extracted common subsequences can be used to identify any evaluated application without requiring the original benign application. Experimental results show that SCSdroid falsely detected only two applications among 100 evaluated benign applications, and falsely detected only one application among 49 evaluated malicious applications. As a result, SCSdroid achieved up to 95.97% detection accuracy, i.e., 143 correct detections among 149 applications.}
 }
+
+
+@article{1156,
+author = {Costamagna, Valerio and Zheng, Cong and Huang, Heqing},
+title = {Identifying and Evading Android Sandbox Through Usage-Profile Based Fingerprints},
+year = {2018},
+isbn = {9781450357579},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3203422.3203427},
+doi = {10.1145/3203422.3203427},
+abstract = {Android sandbox is built either on the Android emulator or the real device with a hooking framework. Fingerprints of the Android sandbox could be used to evade the dynamic detection. So, in this paper, we first conduct a measurement on eight Android sandboxes and find that their customized usage profile (e.g., contact, SMS) can be fingerprinted by attackers for evading the sandbox. From our measurement results, most Android sandboxes have empty usage profile fingerprints, or fixed fingerprints, or random artifact fingerprints. So, without protections on such user profiles, Android malware can identify these fingerprints that associate with different sandboxes and hide its malicious behaviors. At last, we propose several mitigation solutions trivial to implement, including generating and feeding random real usage profiles to the malware sample every time, as well as a hybrid approach, which combines both random and fixed usage profiles.},
+booktitle = {Proceedings of the First Workshop on Radical and Experiential Security},
+pages = {17–23},
+numpages = {7},
+keywords = {android, antivirus, sandbox, fingerprinting, mobile security},
+location = {Incheon, Republic of Korea},
+series = {RESEC '18}
+}
+
+
+
+@INPROCEEDINGS{1136 ,
+author={Yingjun Zhang and Kezhen Huang and Yuling Liu and Kai Chen and Liang Huang and Yifeng Lian},
+title={Timing-Based Clone Detection on Android Markets},
+proceedings={International Conference on Security and Privacy in Communication Networks. 10th International ICST Conference, SecureComm 2014, Beijing, China, September 24-26, 2014, Revised Selected Papers, Part II},
+proceedings_a={SECURECOMM},
+year={2015},
+month={12},
+keywords={Clone detection CPU time usage Smartphone security},
+doi={10.1007/978-3-319-23802-9_29}
+}
+
+
+
+@article{nguyen2020detecting,
+title={Detecting repackaged android applications using perceptual hashing},
+author={Nguyen, Thanh and McDonald, J Todd and Glisson, William Bradley and Andel, Todd R},
+year={2020},
+organization={Proceedings of the 53rd Hawaii International Conference on System Sciences}
+}
+
+
+@INPROCEEDINGS{7181443,
+author={Soh, Charlie and Kuan Tan, Hee Beng and Arnatovich, Yauhen Leanidavich and Wang, Lipo},
+booktitle={2015 IEEE 23rd International Conference on Program Comprehension},
+title={Detecting Clones in Android Applications through Analyzing User Interfaces},
+year={2015},
+volume={},
+number={},
+pages={163-173},
+doi={10.1109/ICPC.2015.25}}
+
+
+
+@INPROCEEDINGS{5665792,
+author={Bläsing, Thomas and Batyuk, Leonid and Schmidt, Aubrey-Derrick and Camtepe, Seyit Ahmet and Albayrak, Sahin},
+booktitle={2010 5th International Conference on Malicious and Unwanted Software},
+title={An Android Application Sandbox system for suspicious software detection},
+year={2010},
+volume={},
+number={},
+pages={55-62},
+doi={10.1109/MALWARE.2010.5665792}}
+
+
+@Article{Kim2016,
+author={Kim, Daeyoung
+and Gokhale, Amruta
+and Ganapathy, Vinod
+and Srivastava, Abhinav},
+title={Detecting plagiarized mobile apps using API birthmarks},
+journal={Automated Software Engineering},
+year={2016},
+month={Dec},
+day={01},
+volume={23},
+number={4},
+pages={591-618},
+abstract={This paper addresses the problem of detecting plagiarized mobile apps. Plagiarism is the practice of building mobile apps by reusing code from other apps without the consent of the corresponding app developers. Recent studies on third-party app markets have suggested that plagiarized apps are an important vehicle for malware delivery on mobile phones. Malware authors repackage official versions of apps with malicious functionality, and distribute them for free via these third-party app markets. An effective technique to detect app plagiarism can therefore help identify malicious apps. Code plagiarism has long been a problem and a number of code similarity detectors have been developed over the years to detect plagiarism. In this paper we show that obfuscation techniques can be used to easily defeat similarity detectors that rely solely on statically scanning the code of an app. We propose a dynamic technique to detect plagiarized apps that works by observing the interaction of an app with the underlying mobile platform via its API invocations. We propose API birthmarks to characterize unique app behaviors, and develop a robust plagiarism detection tool using API birthmarks.},
+issn={1573-7535},
+doi={10.1007/s10515-015-0182-6},
+url={https://doi.org/10.1007/s10515-015-0182-6}
+}
+
+
+
+
+
+@InProceedings{6545,
+author="Guan, Quanlong
+and Huang, Heqing
+and Luo, Weiqi
+and Zhu, Sencun",
+editor="Caballero, Juan
+and Bodden, Eric
+and Athanasopoulos, Elias",
+title="Semantics-Based Repackaging Detection for Mobile Apps",
+booktitle="Engineering Secure Software and Systems",
+year="2016",
+publisher="Springer International Publishing",
+address="Cham",
+pages="89--105",
+abstract="While Android app stores keep growing in size and in number, app repackaging has become a major threat to the health of the mobile ecosystem. Different from many syntax-based repackaging detection techniques, in this work we propose a semantic-based approach, RepDetector, which is more robust against code obfuscation attacks. To capture an app's semantics, our approach extracts input-output states of core functions in the app and then compare function and app similarity. We implement a prototype of RepDetector, and evaluate it against various obfuscation technologies. The results show that our approach can detect repackaged apps effectively. It is also at least a hundred times faster than Androguard.",
+isbn="978-3-319-30806-7"
+}
+
+
+@INPROCEEDINGS{7961511,
+author={Yue, Shengtao and Feng, Weizan and Ma, Jun and Jiang, Yanyan and Tao, Xianping and Xu, Chang and Lu, Jian},
+booktitle={2017 IEEE/ACM 25th International Conference on Program Comprehension (ICPC)},
+title={RepDroid: An Automated Tool for Android Application Repackaging Detection},
+year={2017},
+volume={},
+number={},
+pages={132-142},
+doi={10.1109/ICPC.2017.16}}
+
+
+
+@inproceedings{6754,
+author = {Shao, Yuru and Luo, Xiapu and Qian, Chenxiong and Zhu, Pengfei and Zhang, Lei},
+title = {Towards a Scalable Resource-Driven Approach for Detecting Repackaged Android Applications},
+year = {2014},
+isbn = {9781450330053},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2664243.2664275},
+doi = {10.1145/2664243.2664275},
+abstract = {Repackaged Android applications (or simply apps) are one of the major sources of mobile malware and also an important cause of severe revenue loss to app developers. Although a number of solutions have been proposed to detect repackaged apps, the majority of them heavily rely on code analysis, thus suffering from two limitations: (1) poor scalability due to the billion opcode problem; (2) unreliability to code obfuscation/app hardening techniques. In this paper, we explore an alternative approach that exploits core resources, which have close relationships with codes, to detect repackaged apps. More precisely, we define new features for characterizing apps, investigate two kinds of algorithms for searching similar apps, and propose a two-stage methodology to speed up the detection. We realize our approach in a system named ResDroid and conduct large scale evaluation on it. The results show that ResDroid can identify repackaged apps efficiently and effectively even if they are protected by obfuscation or hardening systems.},
+booktitle = {Proceedings of the 30th Annual Computer Security Applications Conference},
+pages = {56–65},
+numpages = {10},
+location = {New Orleans, Louisiana, USA},
+series = {ACSAC '14}
+}
+
+
+
+@INPROCEEDINGS{8116343,
+author={Lin, Meiqi and Zhang, Dafang and Su, Xin and Yu, Tinghao},
+booktitle={2017 IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS)},
+title={Effective and scalable repackaged application detection based on user interface},
+year={2017},
+volume={},
+number={},
+pages={1-6},
+doi={10.1109/INFCOMW.2017.8116343}}
+
+
+@INPROCEEDINGS{8530040,
+author={Yue, Shengtao and Sun, Qingwei and Ma, Jun and Tao, Xianping and Xu, Chang and Lu, Jian},
+booktitle={2018 IEEE International Conference on Software Maintenance and Evolution (ICSME)},
+title={RegionDroid: A Tool for Detecting Android Application Repackaging Based on Runtime UI Region Features},
+year={2018},
+volume={},
+number={},
+pages={323-333},
+doi={10.1109/ICSME.2018.00041}}
+
+
+
+@ARTICLE{9069227,
+author={Hu, Yangyu and Xu, Guosheng and Zhang, Bowen and Lai, Kun and Xu, Guoai and Zhang, Miao},
+journal={IEEE Access},
+title={Robust App Clone Detection Based on Similarity of UI Structure},
+year={2020},
+volume={8},
+number={},
+pages={77142-77155},
+doi={10.1109/ACCESS.2020.2988400}}
+
+
+
+@inproceedings{Li2012JuxtappAD,
+title={Juxtapp and DStruct: Detection of Similarity Among Android Applications},
+author={Saung Li},
+year={2012}
+}
+@InProceedings{76544,
+author="Guo, Junxia
+and Liu, Dongdong
+and Zhao, Rilian
+and Li, Zheng",
+editor="Wang, Guojun
+and Lin, Xuemin
+and Hendler, James
+and Song, Wei
+and Xu, Zhuoming
+and Liu, Genggeng",
+title="WLTDroid: Repackaging Detection Approach for Android Applications",
+booktitle="Web Information Systems and Applications",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="579--591",
+abstract="Huge number of mobile applications are downloaded every year. These benefits promote the rapid development of the mobile application industry, especially Android applications for its openness. But, because of the low cost and good profit, Android application repackaging also developed quickly, which can make a kind of malware applications and publish them to the Android market. Therefore, in order to defend against this dangerous technology, repackaging detection technology has been continuously studied in recent years. Contrary to the repackaging detection technique, obfuscation techniques are used in the application repacking to avoid detection. This makes the effectiveness of many existing methods be affected. In this paper, we propose a novel approach based on Dynamic Whole Layout Tree extraction, that we call WLTDroid, which can avoid the interference of the layout file obfuscation. The experimental results show that the approach proposed in this paper can resist the obfuscation affect better than other repackaging detection methods. In addition, our approach is more accurate than the existing method RepDroid.",
+isbn="978-3-030-60029-7"
+}
+
+
+
+@INPROCEEDINGS{7846987,
+author={Lyu, Fang and Lin, Yapin and Yang, Junfeng and Zhou, Junhai},
+booktitle={2016 IEEE Trustcom/BigDataSE/ISPA},
+title={SUIDroid: An Efficient Hardening-Resilient Approach to Android App Clone Detection},
+year={2016},
+volume={},
+number={},
+pages={511-518},
+doi={10.1109/TrustCom.2016.0104}}
+
+
+
+
+@INPROCEEDINGS{9688672,
+author={Liu, Xujian and Yu, Zihan and Song, Zhiyong and Chen, Liquan and Qin, Zhongyuan},
+booktitle={2021 IEEE 6th International Conference on Signal and Image Processing (ICSIP)},
+title={MDSDroid: A Multi-level Detection System for Android Repackaged Applications},
+year={2021},
+volume={},
+number={},
+pages={1128-1133},
+doi={10.1109/ICSIP52628.2021.9688672}}
+
+
+
+
+
+
+
+@Article{Ma2022,
+author={Ma, Jun
+and Sun, Qing-Wei
+and Xu, Chang
+and Tao, Xian-Ping},
+title={GridDroid---An Effective and Efficient Approach for Android Repackaging Detection Based on Runtime Graphical User Interface},
+journal={Journal of Computer Science and Technology},
+year={2022},
+month={Feb},
+day={01},
+volume={37},
+number={1},
+pages={147-181},
+abstract={Repackaging brings serious threats to Android ecosystem. Software birthmark techniques are typically applied to detect repackaged apps. Birthmarks based on apps' runtime graphical user interfaces (GUI) are effective, especially for obfuscated or encrypted apps. However, existing studies are time-consuming and not suitable for handling apps in large scale. In this paper, we propose an effective yet efficient dynamic GUI birthmark for Android apps. Briefly, we run an app with automatically generated GUI events and dump its layout after each event. We divide each dumped layout into a grid, count in each grid cell the vertices of boundary rectangles corresponding to widgets within the layout, and generate a feature vector to encode the layout. Similar layouts are merged at runtime, and finally we obtain a graph as the birthmark of the app. Given a pair of apps to be compared, we build a weighted bipartite graph from their birthmarks and apply a modified version of the maximum-weight-bipartite-matching algorithm to determine whether they form a repackaging pair (RP) or not. We implement the proposed technique in a prototype, GridDroid, and apply it to detect RPs in three datasets involving 527 apks. GridDroid reports only six false negatives and seven false positives, and it takes GridDroid merely 20 microseconds on average to compare a pair of birthmarks.},
+issn={1860-4749},
+doi={10.1007/s11390-021-1659-3},
+url={https://doi.org/10.1007/s11390-021-1659-3}
+}
