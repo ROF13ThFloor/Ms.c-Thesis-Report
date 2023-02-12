@@ -1041,7 +1041,7 @@ doi={10.1109/I2CT.2017.8226303}}
 
 @article{LIN2013340,
 title = {Identifying android malicious repackaged applications by thread-grained system call sequences},
-journal = {Computers & Security},
+journal = {Computers \& Security},
 volume = {39},
 pages = {340-350},
 year = {2013},
@@ -1416,3 +1416,190 @@ keywords = {Android app repackaging, code obfuscation},
 location = {Vienna, Austria},
 series = {CGO 2018}
 }
+
+@inproceedings{3274726,
+author = {Wermke, Dominik and Huaman, Nicolas and Acar, Yasemin and Reaves, Bradley and Traynor, Patrick and Fahl, Sascha},
+title = {A Large Scale Investigation of Obfuscation Use in Google Play},
+year = {2018},
+isbn = {9781450365697},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3274694.3274726},
+doi = {10.1145/3274694.3274726},
+abstract = {Android applications are frequently plagiarized or repackaged, and software obfuscation is a recommended protection against these practices. However, there is very little data on the overall rates of app obfuscation, the techniques used, or factors that lead to developers to choose to obfuscate their apps. In this paper, we present the first comprehensive analysis of the use of and challenges to software obfuscation in Android applications. We analyzed 1.7 million free Android apps from Google Play to detect various obfuscation techniques, finding that only 24.92\% of apps are obfuscated by the developer. To better understand this rate of obfuscation, we surveyed 308 Google Play developers about their experiences and attitudes about obfuscation. We found that while developers feel that apps in general are at risk of plagiarism, they do not fear theft of their own apps. Developers also report difficulties obfuscating their own apps. To better understand, we conducted a follow-up study where the vast majority of 70 participants failed to obfuscate a realistic sample app even while many mistakenly believed they had been successful. These findings have broad implications both for improving the security of Android apps and for all tools that aim to help developers write more secure software.},
+booktitle = {Proceedings of the 34th Annual Computer Security Applications Conference},
+pages = {222–235},
+numpages = {14},
+keywords = {Obfuscation, Android, User Study},
+location = {San Juan, PR, USA},
+series = {ACSAC '18}
+}
+
+
+@misc{virusbulletinVirusBulletin,
+	author = {},
+	title = {{V}irus {B}ulletin :: {O}bfuscation in {A}ndroid malware, and how to fight back --- virusbulletin.com},
+	howpublished = {\url{https://www.virusbulletin.com/virusbulletin/2014/07/obfuscation-android-malware-and-how-fight-back}},
+	year = {},
+	note = {[Accessed 12-Feb-2023]},
+}
+
+
+
+
+@INPROCEEDINGS{7972730,
+author={Wang, Yan and Rountev, Atanas},
+booktitle={2017 IEEE/ACM 4th International Conference on Mobile Software Engineering and Systems (MOBILESoft)},
+title={Who Changed You? Obfuscator Identification for Android},
+year={2017},
+volume={},
+number={},
+pages={154-164},
+doi={10.1109/MOBILESoft.2017.18}}
+
+
+
+@article{ALAM2017230,
+title = {DroidNative: Automating and optimizing detection of Android native code malware variants},
+journal = {Computers and Security},
+volume = {65},
+pages = {230-246},
+year = {2017},
+issn = {0167-4048},
+doi = {https://doi.org/10.1016/j.cose.2016.11.011},
+url = {https://www.sciencedirect.com/science/article/pii/S016740481630164X},
+author = {Shahid Alam and Zhengyang Qu and Ryan Riley and Yan Chen and Vaibhav Rastogi},
+keywords = {Android native code, Malware analysis, Malware variant detection, Control flow analysis, Data mining},
+abstract = {According to the Symantec and F-Secure threat reports, mobile malware development in 2013 and 2014 has continued to focus almost exclusively (~99%) on the Android platform. Malware writers are applying stealthy mutations (obfuscations) to create malware variants, thwarting detection by signature-based detectors. In addition, the plethora of more sophisticated detectors making use of static analysis techniques to detect such variants operate only at the bytecode level, meaning that malware embedded in native code goes undetected. A recent study shows that 86% of the most popular Android applications contain native code, making native code malware a plausible threat vector. This paper proposes DroidNative, an Android malware detector that uses specific control flow patterns to reduce the effect of obfuscations and provides automation. As far as we know, DroidNative is the first system that builds cross-platform (x86 and ARM) semantic-based signatures at the Android native code level, allowing the system to detect malware embedded in either bytecode or native code. When tested with a dataset of 5490 samples, DroidNative achieves a detection rate (DR) of 93.57% and a false positive rate of 2.7%. When tested with traditional malware variants, it achieves a DR of 99.48%, compared to the DRs of academic and commercial tools that range from 8.33% to 93.22%.}
+}
+
+
+
+
+@inproceedings{3232823,
+author = {Bacci, Alessandro and Bartoli, Alberto and Martinelli, Fabio and Medvet, Eric and Mercaldo, Francesco},
+title = {Detection of Obfuscation Techniques in Android Applications},
+year = {2018},
+isbn = {9781450364485},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3230833.3232823},
+doi = {10.1145/3230833.3232823},
+abstract = {Current signature detection mechanisms can be easily evaded by malware writers by applying obfuscation techniques. Employing morphing code techniques, attackers are able to generate several variants of one malicious sample, making the corresponding signature obsolete. Considering that the signature definition is a laborious process manually performed by security analysts, in this paper we propose a method, exploiting static analysis and Machine Learning classification algorithms, to identify whether a mobile application is modified by means of one or more morphing techniques. We perform experiments on a real-world dataset of Android applications (morphed and original), obtaining encouraging results in the obfuscation technique(s) identification.},
+booktitle = {Proceedings of the 13th International Conference on Availability, Reliability and Security},
+articleno = {57},
+numpages = {9},
+location = {Hamburg, Germany},
+series = {ARES 2018}
+}
+
+
+@article{preda2017testing,
+title={Testing android malware detectors against code obfuscation: a systematization of knowledge and unified methodology},
+author={Preda, Mila Dalla and Maggi, Federico},
+journal={Journal of Computer Virology and Hacking Techniques},
+volume={13},
+pages={209--232},
+year={2017},
+publisher={Springer}
+}
+
+
+@INPROCEEDINGS{8650141,
+author={Zhang, Li and Meng, Huasong and Thing, Vrizlynn L. L.},
+booktitle={TENCON 2018 - 2018 IEEE Region 10 Conference},
+title={Progressive Control Flow Obfuscation for Android Applications},
+year={2018},
+volume={},
+number={},
+pages={1075-1079},
+doi={10.1109/TENCON.2018.8650141}}
+
+
+@inproceedings{2484355,
+author = {Rastogi, Vaibhav and Chen, Yan and Jiang, Xuxian},
+title = {DroidChameleon: Evaluating Android Anti-Malware against Transformation Attacks},
+year = {2013},
+isbn = {9781450317672},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2484313.2484355},
+doi = {10.1145/2484313.2484355},
+abstract = {Mobile malware threats have recently become a real concern. In this paper, we evaluate the state-of-the-art commercial mobile antimalware products for Android and test how resistant they are against various common obfuscation techniques (even with known malware). Such an evaluation is important for not only measuring the available defense against mobile malware threats but also proposing effective, next-generation solutions. We developed DroidChameleon, a systematic framework with various transformation techniques, and used it for our study. Our results on ten popular commercial anti-malware applications for Android are worrisome: none of these tools is resistant against common malware transformation techniques. Moreover, the transformations are simple in most cases and anti-malware tools make little effort to provide transformation-resilient detection. Finally, in the light of our results, we propose possible remedies for improving the current state of malware detection on mobile devices.},
+booktitle = {Proceedings of the 8th ACM SIGSAC Symposium on Information, Computer and Communications Security},
+pages = {329–334},
+numpages = {6},
+keywords = {anti-malware, android, mobile, malware},
+location = {Hangzhou, China},
+series = {ASIA CCS '13}
+}
+
+
+@InProceedings{54311,
+author="Li, Zhiqiang
+and Sun, Jun
+and Yan, Qiben
+and Srisa-an, Witawas
+and Tsutano, Yutaka",
+editor="Chen, Songqing
+and Choo, Kim-Kwang Raymond
+and Fu, Xinwen
+and Lou, Wenjing
+and Mohaisen, Aziz",
+title="Obfusifier: Obfuscation-Resistant Android Malware Detection System",
+booktitle="Security and Privacy in Communication Networks",
+year="2019",
+publisher="Springer International Publishing",
+address="Cham",
+pages="214--234",
+abstract="The structure-changing obfuscation has become an effective means for malware authors to create malicious apps that can evade the machine learning-based detection systems. Generally, a highly effective detection system for detecting unobfuscated malware samples can lose its effectiveness when encountering the same samples that have been obfuscated. In this paper, we introduce Obfusifier, a highly effective machine-learning based malware detection system that can sustain its effectiveness even when malware samples are obfuscated using complex and composite techniques. The training of our system is based on obfuscation-resistant features extracted from unobfuscated apps, while the classifier retains high effectiveness for detecting obfuscated malware. Our experimental evaluation shows that Obfusifier can achieve the precision, recall, and F-measure that exceed 95{\%} for detecting obfuscated Android malware, well surpassing any of the previous approaches.",
+isbn="978-3-030-37228-6"
+}
+
+
+
+
+
+@article{MAIORCA201516,
+title = {Stealth attacks: An extended insight into the obfuscation effects on Android malware},
+journal = {Computers \& Security},
+volume = {51},
+pages = {16-31},
+year = {2015},
+issn = {0167-4048},
+doi = {https://doi.org/10.1016/j.cose.2015.02.007},
+url = {https://www.sciencedirect.com/science/article/pii/S016740481500022X},
+author = {Davide Maiorca and Davide Ariu and Igino Corona and Marco Aresu and Giorgio Giacinto},
+keywords = {Android, Malware, Obfuscation, Evasion, DexGuard, Dalvik, Entry points, Signatures, Strings, Bytecode},
+abstract = {In order to effectively evade anti-malware solutions, Android malware authors are progressively resorting to automatic obfuscation strategies. Recent works have shown, on small-scale experiments, the possibility of evading anti-malware engines by applying simple obfuscation transformations on previously detected malware samples. In this paper, we provide a large-scale experiment in which the detection performances of a high number of anti-malware solutions are tested against two different sets of malware samples that have been obfuscated according to different strategies. Moreover, we show that anti-malware engines search for possible malicious content inside assets and entry-point classes. We also provide a temporal analysis of the detection performances of anti-malware engines to verify if their resilience has improved since 2013. Finally, we show how, by manipulating the area of the Android executable that contains the strings used by the application, it is possible to deceive anti-malware engines so that they will identify legitimate samples as malware. On one hand, the attained results show that anti-malware systems have improved their resilience against trivial obfuscation techniques. On the other hand, more complex changes to the application executable have proved to be still effective against detection. Thus, we claim that a deeper static (or dynamic) analysis of the application is needed to improve the robustness of such systems.}
+}
+
+
+@inproceedings{2771795,
+author = {Wang, Haoyu and Guo, Yao and Ma, Ziang and Chen, Xiangqun},
+title = {WuKong: A Scalable and Accurate Two-Phase Approach to Android App Clone Detection},
+year = {2015},
+isbn = {9781450336208},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2771783.2771795},
+doi = {10.1145/2771783.2771795},
+abstract = {Repackaged Android applications (app clones) have been found in many third-party markets, which not only compromise the copyright of original authors, but also pose threats to security and privacy of mobile users. Both fine-grained and coarse-grained approaches have been proposed to detect app clones. However, fine-grained techniques employing complicated clone detection algorithms are difficult to scale to hundreds of thousands of apps, while coarse-grained techniques based on simple features are scalable but less accurate. This paper proposes WuKong, a two-phase detection approach that includes a coarse-grained detection phase to identify suspicious apps by comparing light-weight static semantic features, and a fine-grained phase to compare more detailed features for only those apps found in the first phase. To further improve the detection speed and accuracy, we also introduce an automated clustering-based preprocessing step to filter third-party libraries before conducting app clone detection. Experiments on more than 100,000 Android apps collected from five Android markets demonstrate the effectiveness and scalability of our approach.},
+booktitle = {Proceedings of the 2015 International Symposium on Software Testing and Analysis},
+pages = {71–82},
+numpages = {12},
+keywords = {Android, mobile applications, repackaging, third-party library, Clone detection},
+location = {Baltimore, MD, USA},
+series = {ISSTA 2015}
+}
+
+
+@INPROCEEDINGS{8388984,
+author={Nisha, O. S. Jannath and Bhanu, S. Mary Saira},
+booktitle={2018 4th International Conference on Recent Advances in Information Technology (RAIT)},
+title={Detection of repackaged Android applications based on Apps Permissions},
+year={2018},
+volume={},
+number={},
+pages={1-8},
+doi={10.1109/RAIT.2018.8388984}}
